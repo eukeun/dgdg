@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    >
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="개인거래유도/ 수업 외 영업/ 불쾌한 메시지를"
+        android:layout_gravity="center_horizontal"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="전달 하는 경우 패널티 또는 고발 조치 될 수 있습니다."
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/my_recycler_view"
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="8dp">
+        <EditText
+            android:id="@+id/EditText_chat"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:hint="연락처 입력 시 경고 알람이 팝업 됩니다."/>
+
+        <Button
+            android:id="@+id/Button_send"
+            android:text="보내기"
+            android:textStyle="bold"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:background="@drawable/button"
+            android:textColor="@drawable/clickabletext"/>
+    </LinearLayout>
+
+</LinearLayout>

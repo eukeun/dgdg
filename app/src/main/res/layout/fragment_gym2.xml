@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="22dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/jung160"
+            android:text="시설"
+            android:textColor="#000000"
+            android:textSize="19dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="15dp"
+
+                android:src="@drawable/shower" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="19dp"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/parking" />
+
+            <ImageView
+                android:layout_width="53dp"
+                android:layout_height="53dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/hanger" />
+
+            <ImageView
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:layout_marginLeft="20dp"
+
+                android:src="@drawable/locker" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="14dp"
+                android:fontFamily="@font/jung120"
+                android:text="샤워실"
+                android:textColor="#000000"
+                android:textSize="14dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="14dp"
+                android:fontFamily="@font/jung120"
+                android:paddingLeft="14dp"
+                android:text="주차"
+                android:textColor="#000000"
+                android:textSize="14dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="14dp"
+                android:fontFamily="@font/jung120"
+                android:paddingLeft="29dp"
+                android:text="탈의실"
+                android:textColor="#000000"
+                android:textSize="14dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:layout_marginLeft="22dp"
+
+                android:paddingLeft="5dp"
+                android:fontFamily="@font/jung120"
+                android:text="일일락커"
+                android:textColor="#000000"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/jung160"
+            android:text="이용규정"
+            android:textColor="#000000"
+            android:textSize="19dp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/circle" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:fontFamily="@font/jung120"
+                android:text="운동화, 운동복 개인 지참 필수"
+
+                android:textColor="#000000" />
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/jung160"
+            android:text="전화"
+            android:textColor="#000000"
+            android:textSize="19dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0623 - 3925 - 3925"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="110dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="90dp"
+                android:background="@drawable/button"
+                android:fontFamily="@font/jung160"
+                android:text="전화하기"
+                android:textColor="@drawable/clickabletext"
+                android:textSize="14dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/jung160"
+            android:text="이용시간"
+            android:textColor="#000000"
+            android:textSize="19dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="33dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/jung150"
+                android:text="평일"
+                android:textColor="#000000"
+                android:textSize="16dp" />
+            />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="09:00 ~ 22:00"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/jung150"
+                android:text="토요일"
+                android:textColor="#000000"
+                android:textSize="16dp" />/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="10:00 ~ 14:00"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/jung150"
+                android:text="휴무일"
+                android:textColor="#000000"
+                android:textSize="16dp" />
+            />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="매주 일요일"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/jung160"
+            android:text="주소"
+            android:textColor="#000000"
+            android:textSize="19dp" />
+        />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/jung120"
+                android:text="경기도 부천시 원미구 심곡동 00-00"
+                android:textColor="#000000"
+                 />/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/jung160"
+            android:text="위치"
+            android:textColor="#000000"
+            android:textSize="19dp" />
+        />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/subway" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/jung150"
+                android:text="ㅇㅇ역에서 1km"
+                android:textColor="#000000"
+                android:textSize="16dp" />/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</RelativeLayout>
+
+

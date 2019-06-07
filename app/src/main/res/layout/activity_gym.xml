@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true">
+
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+                <LinearLayout
+                    android:id="@+id/gymname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/viewpager1"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_weight="1"
+                        android:background="#ffffff" />
+
+                    <android.support.design.widget.TabLayout
+                        android:id="@+id/tab_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#ffffff"
+                        app:tabBackground="@drawable/tab_selector"
+                        app:tabGravity="center"
+                        app:tabIndicatorHeight="0dp" />
+
+                </LinearLayout>
+
+            </android.support.design.widget.CollapsingToolbarLayout>
+        </android.support.design.widget.AppBarLayout>
+
+
+        <TabHost
+            android:id="@+id/tabhost"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.Toolbar
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#FFFFFF"
+                        android:minHeight="?attr/actionBarSize" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="바운싱 휘트니스"
+                        android:textColor="#000000"
+                        android:textSize="17dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <TabWidget
+                    android:id="@android:id/tabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <android.support.v4.widget.NestedScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:layout_anchorGravity="top">
+
+                        <FrameLayout
+                            android:id="@android:id/tabcontent"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent">
+
+                            <ScrollView
+                                android:id="@+id/tab1"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent">
+
+                                <TableRow
+                                    android:id="@+id/tableRow1"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content">
+
+                                    <include layout="@layout/fragment_gym1" />
+                                </TableRow>
+                            </ScrollView>
+
+                            <ScrollView
+                                android:id="@+id/tab2"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <include layout="@layout/fragment_gym2" />
+                            </ScrollView>
+
+                            <ScrollView
+                                android:id="@+id/tab3"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <include layout="@layout/fragment_gym3" />
+                            </ScrollView>
+                        </FrameLayout>
+                    </android.support.v4.widget.NestedScrollView>
+                </LinearLayout>
+            </LinearLayout>
+
+        </TabHost>
+
+
+    </android.support.design.widget.CoordinatorLayout>
+
+
+    <LinearLayout
+        android:id="@+id/layoutBottomButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="3dp">
+
+            <Button
+                android:id="@+id/btnCall"
+                android:layout_width="904px"
+                android:layout_height="186px"
+                android:layout_marginLeft="61px"
+                android:layout_marginRight="54px"
+                android:background="@drawable/button"
+                android:text="헬스장 이용하기"
+                android:fontFamily="@font/jung160"
+                android:textSize="16dp"
+                android:textColor="@drawable/clickabletext" />
+
+            <Button
+                android:id="@+id/btnMessage"
+                android:layout_width="357px"
+                android:layout_height="186px"
+                android:layout_marginRight="63px"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/button"
+                android:text="실시간 톡"
+                android:fontFamily="@font/jung160"
+                android:textSize="16dp"
+                android:textColor="@drawable/clickabletext" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
